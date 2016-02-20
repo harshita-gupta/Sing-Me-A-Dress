@@ -15,6 +15,9 @@
 		EE3876CF1C78E717006E99F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3876CD1C78E717006E99F6 /* LaunchScreen.storyboard */; };
 		EE3876DA1C78E717006E99F6 /* Sing_Me_a_DressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3876D91C78E717006E99F6 /* Sing_Me_a_DressTests.swift */; };
 		EE3876E51C78E717006E99F6 /* Sing_Me_a_DressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3876E41C78E717006E99F6 /* Sing_Me_a_DressUITests.swift */; };
+		EE3876F51C790908006E99F6 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3876F31C790908006E99F6 /* BTDiscovery.swift */; };
+		EE3876F61C790908006E99F6 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3876F41C790908006E99F6 /* BTService.swift */; };
+		EE3876F81C79201B006E99F6 /* FDSoundActivatedRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3876F71C79201B006E99F6 /* FDSoundActivatedRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		EE3876E01C78E717006E99F6 /* Sing Me a DressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sing Me a DressUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3876E41C78E717006E99F6 /* Sing_Me_a_DressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sing_Me_a_DressUITests.swift; sourceTree = "<group>"; };
 		EE3876E61C78E717006E99F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3876F31C790908006E99F6 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
+		EE3876F41C790908006E99F6 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
+		EE3876F71C79201B006E99F6 /* FDSoundActivatedRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDSoundActivatedRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		EE3876C01C78E716006E99F6 /* Sing Me a Dress */ = {
 			isa = PBXGroup;
 			children = (
+				EE3876F21C7908D5006E99F6 /* Supporting files */,
 				EE3876C11C78E717006E99F6 /* AppDelegate.swift */,
 				EE3876C31C78E717006E99F6 /* ViewController.swift */,
 				EE3876C51C78E717006E99F6 /* Main.storyboard */,
@@ -126,6 +133,16 @@
 				EE3876E61C78E717006E99F6 /* Info.plist */,
 			);
 			path = "Sing Me a DressUITests";
+			sourceTree = "<group>";
+		};
+		EE3876F21C7908D5006E99F6 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EE3876F31C790908006E99F6 /* BTDiscovery.swift */,
+				EE3876F41C790908006E99F6 /* BTService.swift */,
+				EE3876F71C79201B006E99F6 /* FDSoundActivatedRecorder.swift */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +277,10 @@
 			files = (
 				EE3876C41C78E717006E99F6 /* ViewController.swift in Sources */,
 				EE3876CA1C78E717006E99F6 /* Sing_Me_a_Dress.xcdatamodeld in Sources */,
+				EE3876F61C790908006E99F6 /* BTService.swift in Sources */,
+				EE3876F51C790908006E99F6 /* BTDiscovery.swift in Sources */,
 				EE3876C21C78E717006E99F6 /* AppDelegate.swift in Sources */,
+				EE3876F81C79201B006E99F6 /* FDSoundActivatedRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +505,7 @@
 				EE3876EB1C78E717006E99F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE3876EC1C78E717006E99F6 /* Build configuration list for PBXNativeTarget "Sing Me a DressTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +514,7 @@
 				EE3876EE1C78E717006E99F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE3876EF1C78E717006E99F6 /* Build configuration list for PBXNativeTarget "Sing Me a DressUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +523,7 @@
 				EE3876F11C78E717006E99F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
