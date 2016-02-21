@@ -19,7 +19,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate {
   override init() {
 	super.init()
 	
-	let centralQueue = dispatch_queue_create("com.raywenderlich", DISPATCH_QUEUE_SERIAL)
+	let centralQueue = dispatch_queue_create("hqueue", DISPATCH_QUEUE_SERIAL)
 	centralManager = CBCentralManager(delegate: self, queue: centralQueue)
   }
   
