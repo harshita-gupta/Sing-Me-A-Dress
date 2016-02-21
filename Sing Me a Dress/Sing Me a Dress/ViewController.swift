@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FDSoundActivatedRecorder
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -17,8 +17,10 @@ class ViewController: UIViewController {
 
     var princessByAudio: UInt8 = 0
     
-    self.recorder = FDSoundActivatedRecorder()
+    var recorder = FDSoundActivatedRecorder()
 
+    var rootRef = Firebase(url:"https://blazing-heat-1294.firebaseio.com")
+    var clipsRef = Firebase()
     
     enum Princess : UInt8 {
         case Empty = 0, Belle = 1, Ariel = 2, Elsa, Tianna, Jasmine, Rapunzel
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.clipsRef = rootRef.childByAppendingPath("audioclips")
         self.recorder.delegate = self
         self.recorder.startListening()
         
@@ -125,23 +128,31 @@ extension ViewController: FDSoundActivatedRecorderDelegate {
     /// A recording was triggered or manually started
     func soundActivatedRecorderDidStartRecording(recorder: FDSoundActivatedRecorder) {
         recorder.stopAndSaveRecording()
-
+        print("started recording");
         //        progressView.progressTintColor = UIColor.redColor()
     }
     
     /// No recording has started or been completed after listening for `TOTAL_TIMEOUT_SECONDS`
     func soundActivatedRecorderDidTimeOut(recorder: FDSoundActivatedRecorder) {
+      print("timeout")
 //        progressView.progressTintColor = UIColor.blueColor()
     }
     
     /// The recording and/or listening ended and no recording was captured
     func soundActivatedRecorderDidAbort(recorder: FDSoundActivatedRecorder) {
-//        progressView.progressTintColor = UIColor.blueColor()
+        print("abort")
+        //        progressView.progressTintColor = UIColor.blueColor()
     }
     
     /// A recording was successfully captured
     func soundActivatedRecorderDidFinishRecording(recorder: FDSoundActivatedRecorder, andSaved file: NSURL) {
-        //send to google api and turn to text.
-        savedURL = file
+        print("done recording")
+        let currClipRef = clipsRef.childByAutoId()
+        currClipRef.setValue(file)
+        
+        
+        let currClipId = currClipRef.key
+        
+        
     }
 }
