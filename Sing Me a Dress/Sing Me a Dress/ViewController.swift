@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import AVKit
+import AVFoundation
+
 
 class ViewController: UIViewController {
 
@@ -30,8 +33,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        recorder.delegate = self
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        _ = try? audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        _ = try? audioSession.setActive(true)
+
+        
         self.clipsRef = rootRef.childByAppendingPath("audioclips")
-        self.recorder.delegate = self
         self.recorder.startListening()
         
         // Watch Bluetooth connection

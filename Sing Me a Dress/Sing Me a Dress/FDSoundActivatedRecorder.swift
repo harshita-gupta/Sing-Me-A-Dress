@@ -166,7 +166,9 @@ public class FDSoundActivatedRecorder: NSObject, AVAudioRecorderDelegate {
         let fadeOutStartTime = CMTimeSubtract(recordingEndTime, CMTimeMake(Int64(Double(FALL_TRIGGER_INTERVALS) * Double(INTERVAL_SECONDS) * Double(SAVING_SAMPLES_PER_SECOND)), Int32(SAVING_SAMPLES_PER_SECOND)))
         let exportTimeRange = CMTimeRangeFromTimeToTime(recordingBeginTime, recordingEndTime)
         let fadeInTimeRange = CMTimeRangeFromTimeToTime(recordingBeginTime, fadeInDoneTime)
+        print(fadeInTimeRange)
         let fadeOutTimeRange = CMTimeRangeFromTimeToTime(fadeOutStartTime, recordingEndTime)
+        print(fadeOutTimeRange)
         
         // Set up the AVMutableAudioMix which does fading
         let avAsset = AVAsset(URL: self.audioRecorder.url)
@@ -174,8 +176,8 @@ public class FDSoundActivatedRecorder: NSObject, AVAudioRecorderDelegate {
         let track = tracks[0]
         let exportAudioMix = AVMutableAudioMix()
         let exportAudioMixInputParameters = AVMutableAudioMixInputParameters(track: track)
-        exportAudioMixInputParameters.setVolumeRampFromStartVolume(0.0, toEndVolume: 1.0, timeRange: fadeInTimeRange)
-        exportAudioMixInputParameters.setVolumeRampFromStartVolume(1.0, toEndVolume: 0.0, timeRange: fadeOutTimeRange)
+//        exportAudioMixInputParameters.setVolumeRampFromStartVolume(0.0, toEndVolume: 1.0, timeRange: fadeInTimeRange)
+//        exportAudioMixInputParameters.setVolumeRampFromStartVolume(1.0, toEndVolume: 0.0, timeRange: fadeOutTimeRange)
         exportAudioMix.inputParameters = [exportAudioMixInputParameters]
         
         // Configure AVAssetExportSession which sets audio format
