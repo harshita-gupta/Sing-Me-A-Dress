@@ -22,9 +22,29 @@
 		EE3876FC1C79A32D006E99F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3876FB1C79A32D006E99F6 /* Foundation.framework */; };
 		EE3876FE1C79A334006E99F6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3876FD1C79A334006E99F6 /* Security.framework */; };
 		EE3877001C79A33E006E99F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3876FF1C79A33E006E99F6 /* SystemConfiguration.framework */; };
-		EE3877041C79A748006E99F6 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877031C79A748006E99F6 /* Firebase.framework */; };
 		EE3877061C79A7AA006E99F6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877051C79A7AA006E99F6 /* libicucore.tbd */; };
 		EE3877081C79A7B4006E99F6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877071C79A7B4006E99F6 /* libc++.tbd */; };
+		EE38771A1C79B9A3006E99F6 /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877091C79B9A3006E99F6 /* AWSAPIGateway.framework */; };
+		EE38771B1C79B9A3006E99F6 /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38770A1C79B9A3006E99F6 /* AWSAutoScaling.framework */; };
+		EE38771C1C79B9A3006E99F6 /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38770B1C79B9A3006E99F6 /* AWSCloudWatch.framework */; };
+		EE38771D1C79B9A3006E99F6 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38770C1C79B9A3006E99F6 /* AWSCore.framework */; };
+		EE38771E1C79B9A3006E99F6 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38770D1C79B9A3006E99F6 /* AWSDynamoDB.framework */; };
+		EE38771F1C79B9A3006E99F6 /* AWSEC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38770E1C79B9A3006E99F6 /* AWSEC2.framework */; };
+		EE3877201C79B9A3006E99F6 /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38770F1C79B9A3006E99F6 /* AWSElasticLoadBalancing.framework */; };
+		EE3877211C79B9A3006E99F6 /* AWSIoT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877101C79B9A3006E99F6 /* AWSIoT.framework */; };
+		EE3877221C79B9A3006E99F6 /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877111C79B9A3006E99F6 /* AWSKinesis.framework */; };
+		EE3877231C79B9A3006E99F6 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877121C79B9A3006E99F6 /* AWSLambda.framework */; };
+		EE3877241C79B9A3006E99F6 /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877131C79B9A3006E99F6 /* AWSMachineLearning.framework */; };
+		EE3877251C79B9A3006E99F6 /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877141C79B9A3006E99F6 /* AWSMobileAnalytics.framework */; };
+		EE3877261C79B9A3006E99F6 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877151C79B9A3006E99F6 /* AWSS3.framework */; };
+		EE3877271C79B9A3006E99F6 /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877161C79B9A3006E99F6 /* AWSSES.framework */; };
+		EE3877281C79B9A3006E99F6 /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877171C79B9A3006E99F6 /* AWSSimpleDB.framework */; };
+		EE3877291C79B9A3006E99F6 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877181C79B9A3006E99F6 /* AWSSNS.framework */; };
+		EE38772A1C79B9A3006E99F6 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3877191C79B9A3006E99F6 /* AWSSQS.framework */; };
+		EE38772C1C79B9B4006E99F6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38772B1C79B9B4006E99F6 /* libsqlite3.tbd */; };
+		EE38772E1C79B9C7006E99F6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38772D1C79B9C7006E99F6 /* libz.tbd */; };
+		EE3877301C79B9E8006E99F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38772F1C79B9E8006E99F6 /* UIKit.framework */; };
+		EEDD21181C79C95900BB2A2C /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDD21171C79C95900BB2A2C /* AWSCognito.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +86,30 @@
 		EE3876FB1C79A32D006E99F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE3876FD1C79A334006E99F6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EE3876FF1C79A33E006E99F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		EE3877031C79A748006E99F6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		EE3877051C79A7AA006E99F6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		EE3877071C79A7B4006E99F6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		EE3877091C79B9A3006E99F6 /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAPIGateway.framework; sourceTree = "<group>"; };
+		EE38770A1C79B9A3006E99F6 /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAutoScaling.framework; sourceTree = "<group>"; };
+		EE38770B1C79B9A3006E99F6 /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCloudWatch.framework; sourceTree = "<group>"; };
+		EE38770C1C79B9A3006E99F6 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		EE38770D1C79B9A3006E99F6 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = "<group>"; };
+		EE38770E1C79B9A3006E99F6 /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSEC2.framework; sourceTree = "<group>"; };
+		EE38770F1C79B9A3006E99F6 /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSElasticLoadBalancing.framework; sourceTree = "<group>"; };
+		EE3877101C79B9A3006E99F6 /* AWSIoT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSIoT.framework; sourceTree = "<group>"; };
+		EE3877111C79B9A3006E99F6 /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSKinesis.framework; sourceTree = "<group>"; };
+		EE3877121C79B9A3006E99F6 /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLambda.framework; sourceTree = "<group>"; };
+		EE3877131C79B9A3006E99F6 /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMachineLearning.framework; sourceTree = "<group>"; };
+		EE3877141C79B9A3006E99F6 /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileAnalytics.framework; sourceTree = "<group>"; };
+		EE3877151C79B9A3006E99F6 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		EE3877161C79B9A3006E99F6 /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSES.framework; sourceTree = "<group>"; };
+		EE3877171C79B9A3006E99F6 /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSimpleDB.framework; sourceTree = "<group>"; };
+		EE3877181C79B9A3006E99F6 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
+		EE3877191C79B9A3006E99F6 /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSQS.framework; sourceTree = "<group>"; };
+		EE38772B1C79B9B4006E99F6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EE38772D1C79B9C7006E99F6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EE38772F1C79B9E8006E99F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE3877341C79C7FF006E99F6 /* ObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ObjectiveC-Bridging-Header.h"; path = "BridgingHeader/ObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEDD21171C79C95900BB2A2C /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +117,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3877081C79A7B4006E99F6 /* libc++.tbd in Frameworks */,
-				EE3877061C79A7AA006E99F6 /* libicucore.tbd in Frameworks */,
-				EE3877041C79A748006E99F6 /* Firebase.framework in Frameworks */,
+				EE3877301C79B9E8006E99F6 /* UIKit.framework in Frameworks */,
 				EE3877001C79A33E006E99F6 /* SystemConfiguration.framework in Frameworks */,
 				EE3876FE1C79A334006E99F6 /* Security.framework in Frameworks */,
-				EE3876FC1C79A32D006E99F6 /* Foundation.framework in Frameworks */,
 				EE3876FA1C79A327006E99F6 /* CFNetwork.framework in Frameworks */,
+				EE38772E1C79B9C7006E99F6 /* libz.tbd in Frameworks */,
+				EE38772C1C79B9B4006E99F6 /* libsqlite3.tbd in Frameworks */,
+				EE38771C1C79B9A3006E99F6 /* AWSCloudWatch.framework in Frameworks */,
+				EE3877281C79B9A3006E99F6 /* AWSSimpleDB.framework in Frameworks */,
+				EE3877251C79B9A3006E99F6 /* AWSMobileAnalytics.framework in Frameworks */,
+				EEDD21181C79C95900BB2A2C /* AWSCognito.framework in Frameworks */,
+				EE38772A1C79B9A3006E99F6 /* AWSSQS.framework in Frameworks */,
+				EE3877271C79B9A3006E99F6 /* AWSSES.framework in Frameworks */,
+				EE3877241C79B9A3006E99F6 /* AWSMachineLearning.framework in Frameworks */,
+				EE3877211C79B9A3006E99F6 /* AWSIoT.framework in Frameworks */,
+				EE38771D1C79B9A3006E99F6 /* AWSCore.framework in Frameworks */,
+				EE3877081C79A7B4006E99F6 /* libc++.tbd in Frameworks */,
+				EE38771B1C79B9A3006E99F6 /* AWSAutoScaling.framework in Frameworks */,
+				EE3877201C79B9A3006E99F6 /* AWSElasticLoadBalancing.framework in Frameworks */,
+				EE38771E1C79B9A3006E99F6 /* AWSDynamoDB.framework in Frameworks */,
+				EE38771F1C79B9A3006E99F6 /* AWSEC2.framework in Frameworks */,
+				EE3877221C79B9A3006E99F6 /* AWSKinesis.framework in Frameworks */,
+				EE3877061C79A7AA006E99F6 /* libicucore.tbd in Frameworks */,
+				EE3877231C79B9A3006E99F6 /* AWSLambda.framework in Frameworks */,
+				EE3877261C79B9A3006E99F6 /* AWSS3.framework in Frameworks */,
+				EE3877291C79B9A3006E99F6 /* AWSSNS.framework in Frameworks */,
+				EE3876FC1C79A32D006E99F6 /* Foundation.framework in Frameworks */,
+				EE38771A1C79B9A3006E99F6 /* AWSAPIGateway.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,9 +167,29 @@
 		6D91900C2F7CED3880B74AEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE38772F1C79B9E8006E99F6 /* UIKit.framework */,
+				EE38772D1C79B9C7006E99F6 /* libz.tbd */,
+				EE38772B1C79B9B4006E99F6 /* libsqlite3.tbd */,
 				EE3877071C79A7B4006E99F6 /* libc++.tbd */,
 				EE3877051C79A7AA006E99F6 /* libicucore.tbd */,
-				EE3877031C79A748006E99F6 /* Firebase.framework */,
+				EEDD21171C79C95900BB2A2C /* AWSCognito.framework */,
+				EE3877091C79B9A3006E99F6 /* AWSAPIGateway.framework */,
+				EE38770A1C79B9A3006E99F6 /* AWSAutoScaling.framework */,
+				EE38770B1C79B9A3006E99F6 /* AWSCloudWatch.framework */,
+				EE38770C1C79B9A3006E99F6 /* AWSCore.framework */,
+				EE38770D1C79B9A3006E99F6 /* AWSDynamoDB.framework */,
+				EE38770E1C79B9A3006E99F6 /* AWSEC2.framework */,
+				EE38770F1C79B9A3006E99F6 /* AWSElasticLoadBalancing.framework */,
+				EE3877101C79B9A3006E99F6 /* AWSIoT.framework */,
+				EE3877111C79B9A3006E99F6 /* AWSKinesis.framework */,
+				EE3877121C79B9A3006E99F6 /* AWSLambda.framework */,
+				EE3877131C79B9A3006E99F6 /* AWSMachineLearning.framework */,
+				EE3877141C79B9A3006E99F6 /* AWSMobileAnalytics.framework */,
+				EE3877151C79B9A3006E99F6 /* AWSS3.framework */,
+				EE3877161C79B9A3006E99F6 /* AWSSES.framework */,
+				EE3877171C79B9A3006E99F6 /* AWSSimpleDB.framework */,
+				EE3877181C79B9A3006E99F6 /* AWSSNS.framework */,
+				EE3877191C79B9A3006E99F6 /* AWSSQS.framework */,
 				EE3876FF1C79A33E006E99F6 /* SystemConfiguration.framework */,
 				EE3876FD1C79A334006E99F6 /* Security.framework */,
 				EE3876FB1C79A32D006E99F6 /* Foundation.framework */,
@@ -176,6 +257,7 @@
 			children = (
 				EE3876F31C790908006E99F6 /* BTDiscovery.swift */,
 				EE3876F41C790908006E99F6 /* BTService.swift */,
+				EE3877341C79C7FF006E99F6 /* ObjectiveC-Bridging-Header.h */,
 				EE3876F71C79201B006E99F6 /* FDSoundActivatedRecorder.swift */,
 			);
 			name = "Supporting files";
@@ -411,6 +493,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -448,6 +532,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -464,6 +550,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Sing-Me-a-Dress";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -479,6 +567,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Sing-Me-a-Dress";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/Harshita/Developer/Hackathon Projects/SingMeADress/Sing-Me-A-Dress/Sing Me a Dress/Sing Me a Dress/BridgingHeader/ObjectiveC-Bridging-Header.h";
 			};
 			name = Release;
 		};
